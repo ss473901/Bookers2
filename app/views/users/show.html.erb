@@ -1,14 +1,10 @@
 <header>
-<%= link_to"Bookers", root_path %>
-
-<%= link_to"Home", user_path(@book.id) %>
-
-<%= link_to"Users", users_path  %>
-
-<%= link_to"Logout" %>
-
+  <%= link_to"Bookers", root_path  %>
+  <%= link_to"Home", user_path(current_user.id)  %>
+  <%= link_to"Users", users_path %>
+  <%= link_to"Books", books_path %>
+  <%= link_to "logout", destroy_user_session_path, method: :delete %>
 </header>
-
 
   <h2>User info</h2>
   
