@@ -1,17 +1,9 @@
 <header>
-  <nav>
-    <div class="container">
-      <a><span>Bookers</span></a>
-      <div>
-        <ul>
-          <li><a> Home</a></li>
-          <li><a> About</a></li>
-          <li><a> sign up</a></li>
-          <li><a> login</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <%= link_to"Bookers", root_path  %>  
+  <%= link_to"Home", root_path  %>
+  <%= link_to"About", about_path %>
+  <%= link_to"sign_up",new_user_registration_path %>
+  <%= link_to"login", new_user_session_path %>
 </header>
 
 <main>
