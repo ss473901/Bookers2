@@ -1,2 +1,38 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<header>
+  <nav>
+    <div class="container">
+      <a><span>Bookers</span></a>
+      <div>
+        <ul>
+          <li><a> Home</a></li>
+          <li><a> About</a></li>
+          <li><a> sign up</a></li>
+          <li><a> login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>  
+
+<main>
+  <h1>Editing Book</h2>
+  
+  <h2>Title</h2>
+  
+  <h2>Option</h2>
+  
+  <%= form_with model: @book, local: true do |f| %>
+  <%= f.submit "Update Book" %>
+
+</main>
+
+
+<footer>
+  <div class="container mt-5">
+  	<div class="row">
+    	<div class="mx-auto">
+    		<p>CopyRight Infratop.inc</p>
+    	</div>
+    </div>
+  </div>
+</footer>
