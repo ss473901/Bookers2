@@ -5,14 +5,17 @@
   <%= link_to"Books", books_path %>
   <%= link_to "logout", destroy_user_session_path, method: :delete %>
 </header>
-
-  <h2>User info</h2>
-    <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg' %>
-      <h3>name</h3>
-      <p><%= @user.name %></p>
-      <h3>introduction</h3>
-      <p><%= @user.profile %></p>
-    <%= link_to "編集", edit_user_path(@user.id) %>
+<main>
+  <div class="User info">
+    <h2>User info</h2>
+      <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg' %>
+        <h3>name</h3>
+        <p><%= @user.name %></p>
+        <h3>introduction</h3>
+        <p><%= @user.profile %></p>
+      <%= link_to "編集", edit_user_path(@user.id) %>  
+  </div>
+  
     
   <h2>New book</h2>
     <%= form_with model:@book,local:true do |f| %>
@@ -25,8 +28,7 @@
   
   <h2>Books</h2>
   
-  
-  
+
 </main>
 <footer>
   <div class="container mt-5">
