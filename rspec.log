@@ -1,0 +1,64 @@
+
+An error occurred while loading ./spec/models/book_spec.rb.[31m - Did you mean?
+                    rspec ./spec/system/books_spec.rb
+[0m
+[31mFailure/Error: require File.expand_path('../../config/environment', __FILE__)[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- selenium-webdriver[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:34:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/chromedriver-helper-2.1.1/lib/chromedriver-helper.rb:2:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'[0m
+[36m# ./config/application.rb:7:in `<top (required)>'[0m
+[36m# ./config/environment.rb:2:in `require_relative'[0m
+[36m# ./config/environment.rb:2:in `<top (required)>'[0m
+[36m# ./spec/rails_helper.rb:4:in `require'[0m
+[36m# ./spec/rails_helper.rb:4:in `<top (required)>'[0m
+[36m# ./spec/models/book_spec.rb:3:in `require'[0m
+[36m# ./spec/models/book_spec.rb:3:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/system/books_spec.rb.[31m - Did you mean?
+                    rspec ./spec/models/book_spec.rb
+[0m
+[31mFailure/Error: require File.expand_path('../../config/environment', __FILE__)[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- selenium-webdriver[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:34:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/chromedriver-helper-2.1.1/lib/chromedriver-helper.rb:2:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'[0m
+[36m# ./config/application.rb:7:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `require_relative'[0m
+[36m# ./config/environment.rb:2:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'[0m
+[36m# ./spec/rails_helper.rb:4:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'[0m
+[36m# ./spec/system/books_spec.rb:1:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:60:in `load'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/bootsnap-1.9.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:60:in `load'[0m
+No examples found.
+
+Finished in 0.00004 seconds (files took 0.75803 seconds to load)
+[31m0 examples, 0 failures, 2 errors occurred outside of examples[0m
+
