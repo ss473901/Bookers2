@@ -25,11 +25,22 @@
     <% end %>
 
   <h2>Users</h2>
-    <% @users.each do |user| %>
-        <%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg' %>
-        <%= user.name %>
-        <%= link_to"Show", user_path(user) %>
-    <% end %>
+   <tablel>
+     <tr>
+       <th>image</th>
+       <th>name</th>
+       <th></th>
+     </tr>
+     <br/>
+     <tr>
+      <% @users.each do |user| %>
+       <tb><%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg',fallback: "no-image.png" %></tb>
+       <tb><%= user.name %></tb>
+       <tb><%= link_to"Show", user_path(user) %></tb>
+       <br/>
+      <% end %>
+     </tr>
+   </tablel>
 </main>
 
 <footer>
