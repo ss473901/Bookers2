@@ -1,6 +1,6 @@
-    <%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg' %>
-    <h2>name</h2>
-      <p><%= user.name %></p>
-    <h2>introduction</h2>
-      <p><%= user.profile %></p>
-    <%= link_to "編集", edit_user_path(user.id) %>
+<%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg' %>
+<h2>name</h2>
+<p><%= user.name %></p>
+<h2>introduction</h2>
+<p><%= user.profile %></p>
+<%= link_to "編集", edit_user_path(user.id) %>
