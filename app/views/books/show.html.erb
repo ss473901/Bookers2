@@ -28,10 +28,10 @@
     <%= @book.title %>
   <% end %>
   <%= @book.body %>
-  <%= link_to "編集", edit_book_path(@book) %>
-  <%= link_to "削除", book_path(@book), method: :delete %>
-
-
+  <% if @user.id ==  current_user.id %>
+   <%= link_to "Edit", edit_book_path(@book) %>
+   <%= link_to "Destroy", book_path(@book), method: :delete %>
+  <% end %>
 
 </main>
 
