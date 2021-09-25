@@ -18,12 +18,21 @@
         <%= f.text_area :body %>
         <%= f.submit "Create Book"%>
     <% end %>
-
+    
   <h2>Book detail</h2>
-      <%= @book.title %>
-      <%= @book.body %>
-      <%= link_to "編集", edit_book_path(@book.id) %>
-      <%= link_to "削除", book_path(@book.id), method: :delete %>
+  <%= attachment_image_tag @user, :profile_image,:fill, 100, 100, format:'jpg' , fallback: "no-image.png" %>
+  <%= link_to user_path(@user) do %>
+    <%= @user.name %>
+  <% end %>
+  <%= link_to book_path(@book) do %>
+    <%= @book.title %>
+  <% end %>
+  <%= @book.body %>
+  <%= link_to "編集", edit_book_path(@book) %>
+  <%= link_to "削除", book_path(@book), method: :delete %>
+
+
+
 </main>
 
 <footer>

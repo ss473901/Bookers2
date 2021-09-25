@@ -13,7 +13,7 @@
     <p><%= current_user.name %></p>
     <h2>introduction</h2>
     <p><%= current_user.profile %></p>
-    <%= link_to "編集", edit_user_path(current_user.id) %>  
+    <%= link_to "編集", edit_user_path(current_user.id) %>
 
   <h2>New book</h2>
     <%= form_with model:@book,local:true do |f| %>
