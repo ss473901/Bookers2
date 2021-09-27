@@ -11,14 +11,9 @@ class UsersController < ApplicationController
   end
 
   def edit
-   if params[:id] == current_user.id
-     @user = User.find(params[:id])
-     render action: :edit
-   else
-    @user = current_user
-    render action: :show
-   end
+   @user = User.find(params[:id])
   end
+  
 
   def update
    @user = User.find(params[:id])

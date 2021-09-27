@@ -24,15 +24,7 @@ class BooksController < ApplicationController
   end
 
   def edit
-   if params[:id] == current_user.id
-     @book = Book.find(params[:id])
-     render action: :edit
-   else
-     @user = current_user
-     @book = Book.find(params[:id])
-     @user = @book.user 
-     render action: :show
-   end
+    @book = Book.find(params[:id])
   end
 
  def update
