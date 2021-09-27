@@ -2,14 +2,30 @@
   <div class="row">
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
       <h1>User info</h1>
+        <% if @user.errors.any? %>
+         <h3><%= @user.errors.count %> errors prohibited this obj from being saved:</h3>
+          <% @user.errors.full_messages.each do |message| %>
+            <ul>
+              <li><%= message %></li>
+            </ul>
+          <% end %>
+        <% end %>
       <%= form_with model:@user, local:true do |f| %>
-        <h4>Name</h4>
-        <%= f.text_field :name %>
-        <h4>Image</h4>
-        <%= f.attachment_field :profile_image %>
-        <h4>Introduction</h4>
-        <%= f.text_area :profile %> <br></br>
-        <%= f.submit 'Update User' %>
+        <div class="form-group">
+          <label for="user_name">Name</label>
+          <%= f.text_field :name, class:"form-control name" %>
+        </div>
+        <div class="form-group">
+          <label for="user_image">Image</label>
+          <%= f.attachment_field :profile_image, class:"form-control-file user_image" %>
+        </div>
+        <div class="form-group">
+          <label for="user_introduction">Introduction</label>
+          <%= f.text_area :profile, class:"form-control introduction" %>
+        </div>
+        <div class="form-group">
+          <%= f.submit 'Update User', class:"btn btn-secondary" %>
+        </div>
       <% end %>
     </div>
   </div>
