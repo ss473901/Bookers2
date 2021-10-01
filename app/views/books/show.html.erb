@@ -56,6 +56,20 @@
          </tr>
        </tbody>
      </table>
+     <div>
+      <% @book.book_comments.each do |book_comment| %>
+        <div>
+          <%= book_comment.body %>
+        </div>
+      <% end %>
+
+      <%= form_with model: [@book, @book_comment] do |f| %>
+        <div>
+          <%= f.text_area :body  %>
+        </div>
+          <%= f.submit '送信' %>
+      <% end %>
+     </div>
      </div>
    </div>
  </div>
