@@ -64,10 +64,10 @@
              <td>
                <%= attachment_image_tag book_comment.user, :profile_image,:fill, 100, 100, format: 'jpeg', fallback: "no-image.png",size:'40x40', class:"attachment user profile_image fallback" %>
                <br></br>
-               <%= book_comment.body %>
+               <%= book_comment.user.name %>
              </td>
              <td>
-               <%= book_comment.user.name %>
+               <%= book_comment.body %>
              </td>
              <td>
                <% if book_comment.user == current_user %>
@@ -81,7 +81,7 @@
         <table class="table">
           <tbody>
             <tr>
-              <%= form_with model: [@book, @book_comments] do |f| %>
+              <%= form_with model: [@book, @book_comments],local:true do |f| %>
                 <%= f.text_area :body,class:"form-control book_body" %>
                 <%= f.submit '送信' %>
               <% end %>
