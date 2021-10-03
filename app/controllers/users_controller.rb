@@ -2,8 +2,8 @@ class UsersController < ApplicationController
 
   def index
    @users = User.all
-   @book = Book.
-   @follow_users = User.where.not(id: current_user)
+   @book = Book.new
+   @follower_users = User.where.not(id: current_user.id)
   end
 
   def show
@@ -17,7 +17,7 @@ class UsersController < ApplicationController
       render "edit"
    else
       redirect_to user_path(current_user)
-     end
+   end
   end
 
   def update
@@ -31,12 +31,12 @@ class UsersController < ApplicationController
 
   def followings
    user = User.find(params[:id])
-   @follow_users = user.followings
+   follow = user.followings
   end
 
   def followers
    user = User.find(params[:id])
-   @follow_users = user.followers
+   @follower_users = user.followers
   end
 
   private
