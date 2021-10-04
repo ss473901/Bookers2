@@ -22,6 +22,14 @@
                 <th>introduction</th>
                 <th><%= current_user.introduction %></th>
               </tr>
+              <tr>
+                <th>follows</th>
+                <th><%= link_to @user.followings.count,followings_user_path(@user) %></th>
+              </tr>
+              <tr>
+                <th>follower</th>
+                <th><%= link_to @user.followers.count,followers_user_path(@user) %></th>
+              </tr>
             </tbody>
           </table>
           <div class="row">
@@ -69,9 +77,15 @@
                  <p>フォロワー数</p>
                </td>
                <td>
-                 <%= link_to user_relationships_path(user), method: :post do %>
-                 フォローする
-                 <% end %>
+                 <% if current_user.is_followed_by?(user) %>
+                     <%= link_to user_relationships_path(user), method: :delete do %>
+                         <p>フォロー外す</p>
+                     <% end %>
+                 <% else %>
+                      <%= link_to user_relationships_path(user), method: :post do %>
+                         <p>フォローする</p>
+                     <% end %>
+                <% end %>
                </td>
                <td><%= link_to"Show", user_path(user) %></td>
              </tr>

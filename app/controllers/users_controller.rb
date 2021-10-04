@@ -4,6 +4,7 @@ class UsersController < ApplicationController
    @users = User.all
    @book = Book.new
    @follower_users = User.where.not(id: current_user.id)
+   @user = current_user
   end
 
   def show
@@ -31,12 +32,12 @@ class UsersController < ApplicationController
 
   def followings
    user = User.find(params[:id])
-   follow = user.followings
+   @users = user.followings
   end
 
   def followers
    user = User.find(params[:id])
-   @follower_users = user.followers
+   @users = user.followers
   end
 
   private
