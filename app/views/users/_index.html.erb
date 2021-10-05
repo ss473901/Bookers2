@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>image</th>
+      <th>name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% users.each do |user| %>
+    <tr>
+      <td><%= atchment_image_tag(current_user, :profile_image, :fill, 40, 40, fallback: "no_image.png", size: '40×40') %></td>
+      <td><%= user.name %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,4 +1,14 @@
 <div class="container px-5 px-sm-0">
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-8 offset-md-1">
+      <%= render 'searches/form' %>
+    </div>
+  </div>
+</div>
+<main>
+  <div class="container px-5 px-sm-0">
     <div id="error_explanation" class="text-danger">
       <% if @book.errors.any? %>
         <h3><%= @book.errors.count %> errors prohibited this obj from being saved:</h3>
@@ -95,3 +105,4 @@
     </div>
   </div>
 </div>
+</main>
