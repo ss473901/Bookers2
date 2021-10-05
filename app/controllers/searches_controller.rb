@@ -9,7 +9,6 @@ class SearchesController < ApplicationController
 private
   def search_for(model,content,method)
     if model == 'user'
-
       if method == "forward_match"
         User.where("name LIKE?", "#{content}%")
       elsif method == "backward_match"
@@ -21,9 +20,7 @@ private
       else
         User.all
       end
-
     elsif model == 'book'
-
       if method == "forward_match"
         Book.where("name LIKE?", "#{content}%")
       elsif method == "backward_match"
@@ -35,9 +32,7 @@ private
       else
         Book.all
       end
-
     end
-
   end
 end
 
