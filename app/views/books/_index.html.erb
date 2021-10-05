@@ -8,7 +8,7 @@
   <tbody>
     <% users.each do |user| %>
     <tr>
-      <td><%= atchment_image_tag(current_user, :profile_image, :fill, 40, 40, fallback: "no_image.png", size: '40×40') %></td>
+      <td><%= attachment_image_tag @user, :profile_image,:fill, 100, 100, format:'jpg' , fallback: "no-image.png",size:'40x40', class:"attachment user profile_image fallback" %> <br></td>
       <td><%= user.name %></td>
     </tr>
     <% end %>
