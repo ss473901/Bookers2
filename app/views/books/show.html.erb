@@ -80,10 +80,8 @@
         <table class="table">
           <tbody>
             <tr>
-              <%= form_with model: [@book, @book_comments],local:true do |f| %>
-                <%= f.text_area :body,class:"form-control book_body" %>
-                <%= f.submit '送信' %>
-              <% end %>
+              <!--コメント一覧機能-->
+              <%= render 'books/comment',book: @book, book_comments: @book_comments %>
              </tr>
          </tbody>
         </table>
